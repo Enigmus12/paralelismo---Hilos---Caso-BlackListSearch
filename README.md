@@ -61,10 +61,10 @@ paralelismo---Hilos---Caso-BlackListSearch/
 
 1. Ubicarse en la carpeta raíz del proyecto (paralelismo---Hilos---Caso-BlackListSearch) y ejecutar ():
     * javac -d out src/main/java/edu/eci/arsw/threads/CountThreadsMain.java
--d out indica que los archivos .class compilados se guardarán en la carpeta out
+    * *-d out indica que los archivos .class compilados se guardarán en la carpeta out
 2. Una vez compilado, se ejecuta con:
     *java -cp out edu.eci.arsw.threads.CountThreadsMain
--cp out especifica el classpath (ruta donde se encuentran las clases compiladas).
+    *-cp out especifica el classpath (ruta donde se encuentran las clases compiladas).
 
 # punto 2
 
