@@ -1,4 +1,17 @@
 ## Paralelismo - Hilos - Caso BlackListSearch
+### Descripción
+
+Este laboratorio introduce los conceptos básicos de paralelismo en Java mediante hilos (threads).
+Se trabaja con ejemplos sencillos para comprender el ciclo de vida de un hilo y luego se aplica al caso de estudio BlackListSearch, donde se valida una dirección IP contra miles de listas negras de hosts maliciosos.
+
+El objetivo es entender cómo explotar la capacidad multi-núcleo de un procesador para mejorar el desempeño de un sistema de búsqueda que puede ejecutarse en paralelo.
+
+### Diagrama de clase
+
+![alt text](img/image9.png)
+
+
+### Solucion
 
 **Parte I - Introducción a Hilos en Java**
 
@@ -60,7 +73,7 @@ paralelismo---Hilos---Caso-BlackListSearch/
 # Punto 1
 
 1. Ubicarse en la carpeta raíz del proyecto (paralelismo---Hilos---Caso-BlackListSearch) y ejecutar ():
-    * javac -d out src/main/java/edu/eci/arsw/threads/CountThreadsMain.java
+    * javac -d out src/main/java/edu/eci/arsw/threads/*.java src/main/java/edu/eci/arsw/spamkeywordsdatasource/*.java
     * *-d out indica que los archivos .class compilados se guardarán en la carpeta out
 2. Una vez compilado, se ejecuta con:
     *java -cp out edu.eci.arsw.threads.CountThreadsMain
@@ -69,7 +82,7 @@ paralelismo---Hilos---Caso-BlackListSearch/
 # punto 2
 
 1. Ubicarse en la carpeta raíz del proyecto (paralelismo---Hilos---Caso-BlackListSearch) y ejecutar :
-    * javac -d out src/main/java/edu/eci/arsw/threads/CountThreadsMain.java
+    * javac -d out -cp out src/main/java/edu/eci/arsw/blacklistvalidator/HostBlackListsValidator.java
 2. Una vez compilado, se ejecuta con:
     * java -cp out edu.eci.arsw.blacklistvalidator.Main
 

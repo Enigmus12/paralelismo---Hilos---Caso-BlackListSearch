@@ -4,13 +4,11 @@ import edu.eci.arsw.spamkeywordsdatasource.HostBlacklistsDataSourceFacade;
 import edu.eci.arsw.threads.SearchThread;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class HostBlackListsValidator {
 
     private static final int BLACK_LIST_ALARM_COUNT = 5;
     private final HostBlacklistsDataSourceFacade skds = HostBlacklistsDataSourceFacade.getInstance();
-    private static final Logger LOG = Logger.getLogger(HostBlackListsValidator.class.getName());
 
     /**
      * Check the given host's IP address in all the available black lists,
